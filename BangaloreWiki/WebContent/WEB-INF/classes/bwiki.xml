@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="bwiki" namespace="/bwiki" extends="tiles-default">
+        <action name="tiless">
+            <result type="tiles">bwiki.index</result>
+        </action>
+        <action name="search" method="listSites" class="com.projects.wiki.bwiki.Sites">
+            <result name="success" type="tiles">bwiki.search.sights</result>
+        </action>
+        
+        
+        <action name="edu-institutions" method="listSites" class="com.projects.wiki.bwiki.Sites">
+            <result name="success">/pages/user/edu-institutions/list-edu-institutions.jsp</result>
+        </action>
+        <action name="sites" method="listSites" class="com.projects.wiki.bwiki.Sites">
+            <result name="success">/pages/user/sites/list-sites.jsp</result>
+        </action>
+        <action name="search-all" method="searchAll" class="com.projects.wiki.bwiki.SearchAction">
+            <result name="success">/pages/user/search/search-all.jsp</result>
+        </action>
+    </package>
+</struts>

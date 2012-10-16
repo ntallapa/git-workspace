@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 13, 2012 10:04:17 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.projects.wiki.bwiki.db.Place" table="places">
+        <id name="no" type="int">
+            <column name="no" />
+            <generator class="assigned" />
+        </id>
+        <property name="place" type="java.lang.String">
+            <column name="place" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        <property name="dist" type="int">
+            <column name="dist" />
+        </property>
+        <property name="direction" type="java.lang.String">
+            <column name="direction" />
+        </property>
+        <property name="road" type="java.lang.String">
+            <column name="road" />
+        </property>
+        <property name="food" type="java.lang.String">
+            <column name="food" />
+        </property>
+        <property name="food_lodge" type="java.lang.String">
+            <column name="food_lodge" />
+        </property>
+        <property name="petrol" type="java.lang.String">
+            <column name="petrol" />
+        </property>
+        <property name="remarks" type="java.lang.String">
+            <column name="remarks" />
+        </property>
+        <property name="days_reqd" type="int">
+            <column name="days_reqd" />
+        </property>
+        <property name="from_period" type="java.lang.String">
+            <column name="from_period" />
+        </property>
+        <property name="to_period" type="java.lang.String">
+            <column name="to_period" />
+        </property>
+    </class>
+</hibernate-mapping>

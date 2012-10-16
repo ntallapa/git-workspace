@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 13, 2012 10:04:17 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.projects.wiki.bwiki.Theatre" table="movie_theatre">
+        <id name="no" type="int">
+            <column name="no" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="theatre_name" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address" />
+        </property>
+        <property name="pin_code" type="java.lang.String">
+            <column name="pin_code" />
+        </property>
+        <property name="contact_number" type="java.lang.String">
+            <column name="contact_number" />
+        </property>
+        <property name="contact_person" type="java.lang.String">
+            <column name="contact_person" />
+        </property>
+        <property name="rating" type="java.lang.String">
+            <column name="rating" />
+        </property>
+        <property name="language" type="java.lang.String">
+            <column name="language" />
+        </property>
+    </class>
+</hibernate-mapping>
